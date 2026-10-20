@@ -1,17 +1,17 @@
 # dureh-gb/homebrew-tap
 
-Private Homebrew tap for the Dureh family's macOS tools.
-
-Needs access to the private `dureh-gb` repositories: git must clone them over HTTPS, run `gh auth setup-git` once (brew clones without prompts or the keychain helper).
+Public Homebrew tap for the Dureh family's macOS tools.
 
 ```sh
-brew tap dureh-gb/tap https://github.com/dureh-gb/homebrew-tap
-brew trust --formula dureh-gb/tap/danjam
-brew install danjam            # then: danjam install
-brew update && brew upgrade danjam
-brew uninstall danjam          # after: danjam uninstall
+brew tap dureh-gb/tap
+brew trust --formula dureh-gb/tap/danjam    # Homebrew asks you to trust a formula from a new tap once
+brew install danjam                         # then: danjam install
+brew update && brew upgrade danjam          # then: danjam install (restarts it)
+brew uninstall danjam                       # after: danjam uninstall
 ```
 
 | Formula | What |
 |---|---|
-| `danjam` | 단잠: switch off an external USB fan on a Mac mini M4 front port while the Mac sleeps (macOS only) |
+| [`danjam`](https://github.com/dureh-gb/danjam) | 단잠: switch off an external USB fan on a Mac mini M4 front port while the Mac sleeps (macOS, Apple silicon) |
+
+Everything in this tap is public, formulae and their downloads alike. Private tools go in a separate private tap.
