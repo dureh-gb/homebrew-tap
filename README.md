@@ -6,6 +6,7 @@ Needs access to the private `dureh-gb` repositories: git must clone them over HT
 
 ```sh
 brew tap dureh-gb/tap https://github.com/dureh-gb/homebrew-tap
+brew trust --formula dureh-gb/tap/danjam
 brew install danjam            # then: danjam install
 brew update && brew upgrade danjam
 brew uninstall danjam          # after: danjam uninstall
