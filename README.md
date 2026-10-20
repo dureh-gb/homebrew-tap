@@ -2,7 +2,7 @@
 
 Private Homebrew tap for the Dureh family's macOS tools.
 
-Needs access to the private `dureh-gb` repositories: git must clone them over HTTPS, through the macOS keychain or `gh auth setup-git`.
+Needs access to the private `dureh-gb` repositories: git must clone them over HTTPS, run `gh auth setup-git` once (brew clones without prompts or the keychain helper).
 
 ```sh
 brew tap dureh-gb/tap https://github.com/dureh-gb/homebrew-tap
