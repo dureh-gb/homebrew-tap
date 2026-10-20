@@ -2,9 +2,13 @@
 
 Private Homebrew tap for the Dureh family's macOS tools.
 
+Needs access to the private `dureh-gb` repositories: git must clone them over HTTPS, through the macOS keychain or `gh auth setup-git`.
+
 ```sh
 brew tap dureh-gb/tap https://github.com/dureh-gb/homebrew-tap
-brew install danjam
+brew install danjam            # then: danjam install
+brew update && brew upgrade danjam
+brew uninstall danjam          # after: danjam uninstall
 ```
 
 | Formula | What |
